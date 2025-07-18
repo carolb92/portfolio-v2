@@ -11,7 +11,7 @@ const ProjectsSection = () => {
 			id: 2,
 			title: "Hang 'Mon",
 			description:
-				"A Pokemon guessing game built with React, TypeScript, and Vite. Select Region and Type filters and guess the randomly generated Pokemon before your 7 attempts run out, otherwise you'll make Pikachu super sad.",
+				"A Pokemon guessing game built with React, TypeScript, and Vite. Select Region and Type filters and guess the randomly generated Pokemon before your seven attempts run out, otherwise you'll make Pikachu super sad.",
 			skills: [
 				"React",
 				"TypeScript",
@@ -24,6 +24,7 @@ const ProjectsSection = () => {
 			link: "https://hang-mon.vercel.app/",
 			gradient: "from-purple-500 to-pink-500",
 			image: hangMon,
+			gitHubRepo: "https://github.com/carolb92/hang-mon",
 		},
 		{
 			id: 3,
@@ -41,6 +42,7 @@ const ProjectsSection = () => {
 			link: "https://far-away-v2.vercel.app/",
 			gradient: "from-blue-500 to-cyan-500",
 			image: farAway,
+			gitHubRepo: "https://github.com/carolb92/far-away-v2",
 		},
 		{
 			id: 1,
@@ -58,6 +60,7 @@ const ProjectsSection = () => {
 			link: "https://sticky-notes-v2-peach.vercel.app/",
 			gradient: "from-yellow-500 to-orange-500",
 			image: stickyNotes,
+			gitHubRepo: "https://github.com/carolb92/sticky-notes-v2",
 		},
 	];
 
@@ -138,29 +141,53 @@ const ProjectsSection = () => {
 											))}
 										</div>
 									</div> */}
-
-									<Button
-										className="w-full accent-gradient hover:scale-105 transition-transform duration-300 group-hover:shadow-lg mt-auto"
-										onClick={(e) => {
-											e.stopPropagation();
-											handleProjectClick(project.link);
-										}}
-									>
-										View Live Project
-										<svg
-											className="w-4 h-4 ml-2"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24"
+									<div className="flex flex-col gap-y-2">
+										<Button
+											className="font-semibold w-full accent-gradient hover:scale-105 transition-transform duration-300 group-hover:shadow-lg mt-auto"
+											onClick={(e) => {
+												e.stopPropagation();
+												handleProjectClick(project.link);
+											}}
 										>
-											<path
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth={2}
-												d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-											/>
-										</svg>
-									</Button>
+											View Live Project
+											<svg
+												className="w-4 h-4 ml-2"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth={2}
+													d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+												/>
+											</svg>
+										</Button>
+										<Button
+											onClick={(e) => {
+												e.stopPropagation();
+												handleProjectClick(project.gitHubRepo);
+											}}
+											variant="outline"
+											className="w-full border-emerald-500 text-emerald-400 hover:scale-105 hover:bg-emerald-500 hover:text-white transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
+										>
+											View GitHub Repo
+											<svg
+												className="w-4 h-4 ml-2"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth={2}
+													d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+												/>
+											</svg>
+										</Button>
+									</div>
 								</div>
 							</CardContent>
 						</Card>
