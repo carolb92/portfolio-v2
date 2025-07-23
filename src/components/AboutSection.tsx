@@ -54,13 +54,17 @@ const AboutSection = () => {
 										<span className="text-emerald-400 font-semibold">
 											Perimeter Health
 										</span>
-										. Former Physician Assistant with 3+ years of frontline
-										emergency medicine experience at a Level 1 trauma center.
+										.{" "}
+										{/* Former Physician Assistant with 3+ years of frontline
+										emergency medicine experience at a Level 1 trauma center. */}
+										As a former emergency medicine Physician Assistant, I bring
+										a calm-under-pressure mindset and user-centered approach to
+										software development.
 									</p>
 
 									<p className="text-gray-300 leading-relaxed text-lg">
 										My ability to translate real-world complexity into clear,
-										user-centered digital experiences helps teams build
+										user-friendly digital experiences helps teams build
 										practical, impactful software—whether for clinicians,
 										customers, or end users in any industry.
 									</p>
