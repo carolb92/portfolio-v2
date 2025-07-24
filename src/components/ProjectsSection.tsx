@@ -30,7 +30,7 @@ const ProjectsSection = () => {
 			id: 3,
 			title: "Far Away",
 			description:
-				"This is a single-page React application built with TypeScript and Tailwind CSS. It allows users to add items and their quantities to a packing list for a trip, then mark them as packed or delete them. Users can also sort the list by name, input order, and packed status. Local storage is used for data persistence.",
+				"This is a single-page React application built with TypeScript and Tailwind CSS. It allows users to add items and their quantities to a packing list, then mark them as packed or delete them. Users can also sort the list by name, input order, and packed status. Local storage is used for data persistence, enhancing user experience by retaining packing list state between sessions.",
 			skills: [
 				"React",
 				"TypeScript",
