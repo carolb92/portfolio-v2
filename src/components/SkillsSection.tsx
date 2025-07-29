@@ -26,7 +26,7 @@ const SkillsSection = () => {
 		},
 		{
 			category: "Development Tools",
-			skills: ["Git & GitHub", "Vite", "Vercel", "Agentic Coding"],
+			skills: ["Git & GitHub", "Vite", "Vercel", "Modern AI Developer Tools"],
 			color: "cyan",
 		},
 	];

@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import farAway from "../assets/images/far-away-tiny.png";
 import hangMon from "../assets/images/hang-mon-start.png";
 import stickyNotes from "../assets/images/tiny-sticky.png";
+import planets from "../assets/images/planets-tiny.png";
 
 const ProjectsSection = () => {
 	const projects = [
@@ -25,6 +26,25 @@ const ProjectsSection = () => {
 			gradient: "from-purple-500 to-pink-500",
 			image: hangMon,
 			gitHubRepo: "https://github.com/carolb92/hang-mon",
+		},
+		{
+			id: 4,
+			title: "Planets Fact Site",
+			description:
+				"This is a mobile-first, multi-page planets facts site built with React, Next.js, TypeScript, and Tailwind CSS. It features a responsive design that adapts to different screen sizes, ensuring a seamless user experience on both mobile and desktop devices. The site includes a dynamic navigation menu that highlights the current page, enhancing usability and accessibility, as well as tabbed content sections for each planet.",
+			skills: [
+				"React",
+				"Next.js",
+				"TypeScript",
+				"Tailwind CSS",
+				"Responsive Web Design",
+				"Next.js Routing",
+			],
+			tools: ["Vite", "Vercel", "Chrome DevTools", "Next.js"],
+			link: "https://planets-fact-site-gamma-six.vercel.app/",
+			gradient: "from-yellow-500 to-orange-500",
+			image: planets,
+			gitHubRepo: "https://github.com/carolb92/planets-fact-site",
 		},
 		{
 			id: 3,
@@ -82,11 +102,12 @@ const ProjectsSection = () => {
 					</p>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-x-1 lg:gap-y-12">
+					{/* lg:grid-cols-3 */}
 					{projects.map((project) => (
 						<Card
 							key={project.id}
-							className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover cursor-pointer group flex flex-col h-full"
+							className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover cursor-pointer group flex flex-col h-full lg:w-[80%] lg:justify-self-center lg:gap-1 xl:w-[65%]"
 							onClick={() => handleProjectClick(project.link)}
 						>
 							<CardContent className="p-6 flex flex-col h-full">
