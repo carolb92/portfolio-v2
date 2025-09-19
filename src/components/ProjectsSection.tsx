@@ -3,16 +3,35 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import farAway from "../assets/images/far-away-tiny.png";
 import hangMon from "../assets/images/hang-mon-start.png";
-import stickyNotes from "../assets/images/tiny-sticky.png";
+// import stickyNotes from "../assets/images/tiny-sticky.png";
 import planets from "../assets/images/planets-tiny.png";
+import perimeterHealth from "../assets/images/perimeter-health-tiny.png";
 
 const ProjectsSection = () => {
 	const projects = [
 		{
+			id: 5,
+			title: "Perimeter Health Company Site",
+			description:
+				"A modern, responsive company website for an early-stage startup, built with Webflow. The site features Calendly widget integration for demo booking, onboarding forms, and showcases the company's mission and services.",
+			skills: [
+				"Webflow",
+				"Responsive Design",
+				"Template Customization",
+				"SEO",
+				"CMS",
+			],
+			tools: ["Webflow", "CMS"],
+			link: "https://www.perimeter.health/",
+			gradient: "from-green-500 to-teal-500",
+			image: perimeterHealth,
+			gitHubRepo: "",
+		},
+		{
 			id: 2,
 			title: "Hang 'Mon",
 			description:
-				"A Pokemon guessing game built with React, TypeScript, and Vite. Select Region and Type filters and guess the randomly generated Pokemon before your seven attempts run out, otherwise you'll make Pikachu super sad.",
+				"A Pokemon guessing game built with React, TypeScript, and Tailwind CSS. Select Region and Type filters and guess the randomly generated Pokemon before your seven attempts run out, otherwise you'll make Pikachu super sad.",
 			skills: [
 				"React",
 				"TypeScript",
@@ -64,24 +83,24 @@ const ProjectsSection = () => {
 			image: farAway,
 			gitHubRepo: "https://github.com/carolb92/far-away-v2",
 		},
-		{
-			id: 1,
-			title: "Super Sticky Notes",
-			description:
-				"A single page application built with React that allows users to add, edit, delete, and search sticky notes for to-dos or task management, utilizing local storage for data persistence.",
-			skills: [
-				"React",
-				"TypeScript",
-				"Tailwind CSS",
-				"local storage",
-				"CRUD operations",
-			],
-			tools: ["Vite", "Vercel", "Chrome DevTools"],
-			link: "https://sticky-notes-v2-peach.vercel.app/",
-			gradient: "from-yellow-500 to-orange-500",
-			image: stickyNotes,
-			gitHubRepo: "https://github.com/carolb92/sticky-notes-v2",
-		},
+		// {
+		// 	id: 1,
+		// 	title: "Super Sticky Notes",
+		// 	description:
+		// 		"A single page application built with React that allows users to add, edit, delete, and search sticky notes for to-dos or task management, utilizing local storage for data persistence.",
+		// 	skills: [
+		// 		"React",
+		// 		"TypeScript",
+		// 		"Tailwind CSS",
+		// 		"local storage",
+		// 		"CRUD operations",
+		// 	],
+		// 	tools: ["Vite", "Vercel", "Chrome DevTools"],
+		// 	link: "https://sticky-notes-v2-peach.vercel.app/",
+		// 	gradient: "from-yellow-500 to-orange-500",
+		// 	image: stickyNotes,
+		// 	gitHubRepo: "https://github.com/carolb92/sticky-notes-v2",
+		// },
 	];
 
 	const handleProjectClick = (link: string) => {
@@ -185,29 +204,31 @@ const ProjectsSection = () => {
 												/>
 											</svg>
 										</Button>
-										<Button
-											onClick={(e) => {
-												e.stopPropagation();
-												handleProjectClick(project.gitHubRepo);
-											}}
-											variant="outline"
-											className="w-full border-emerald-500 text-emerald-400 hover:scale-105 hover:bg-emerald-500 hover:text-white transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
-										>
-											View GitHub Repo
-											<svg
-												className="w-4 h-4 ml-2"
-												fill="none"
-												stroke="currentColor"
-												viewBox="0 0 24 24"
+										{project.gitHubRepo && (
+											<Button
+												onClick={(e) => {
+													e.stopPropagation();
+													handleProjectClick(project.gitHubRepo);
+												}}
+												variant="outline"
+												className="w-full border-emerald-500 text-emerald-400 hover:scale-105 hover:bg-emerald-500 hover:text-white transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
 											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth={2}
-													d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-												/>
-											</svg>
-										</Button>
+												View GitHub Repo
+												<svg
+													className="w-4 h-4 ml-2"
+													fill="none"
+													stroke="currentColor"
+													viewBox="0 0 24 24"
+												>
+													<path
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth={2}
+														d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+													/>
+												</svg>
+											</Button>
+										)}
 									</div>
 								</div>
 							</CardContent>
