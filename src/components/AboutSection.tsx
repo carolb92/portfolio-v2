@@ -32,9 +32,9 @@ const AboutSection = () => {
 										<Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
 											Frontend Developer
 										</Badge>
-										<Badge className="bg-teal-500/20 text-teal-400 border-teal-500/30">
+										{/* <Badge className="bg-teal-500/20 text-teal-400 border-teal-500/30">
 											Healthcare Professional
-										</Badge>
+										</Badge> */}
 									</div>
 
 									<p className="text-gray-300 leading-relaxed text-lg mb-6">
@@ -47,14 +47,18 @@ const AboutSection = () => {
 
 									<p className="text-gray-300 leading-relaxed text-lg mb-6">
 										Currently contributing to diabetes care software at{" "}
-										<span className="text-emerald-400 font-semibold">
-											Palisaid
-										</span>{" "}
+										<a href="https://www.palisaid.com/" target="_blank">
+											<span className="text-emerald-400 font-semibold">
+												Palisaid
+											</span>{" "}
+										</a>
 										and building a data-driven genetics health platform MVP at{" "}
-										<span className="text-emerald-400 font-semibold">
-											Perimeter Health
-										</span>
-										.{" "}
+										<a href="https://www.perimeter.health/" target="_blank">
+											<span className="text-emerald-400 font-semibold">
+												Perimeter Health
+											</span>
+											.{" "}
+										</a>
 										{/* Former Physician Assistant with 3+ years of frontline
 										emergency medicine experience at a Level 1 trauma center. */}
 										As a former emergency medicine Physician Assistant, I bring
