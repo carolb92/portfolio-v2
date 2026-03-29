@@ -46,21 +46,20 @@ const AboutSection = () => {
 									</p>
 
 									<p className="text-gray-300 leading-relaxed text-lg mb-6">
-										Currently contributing to diabetes care software at{" "}
+										Currently contributing to practice management software for
+										diabetes education services at{" "}
 										<a href="https://www.palisaid.com/" target="_blank">
 											<span className="text-emerald-400 font-semibold">
-												Palisaid
+												Palisaid.
 											</span>{" "}
 										</a>
-										and building a data-driven genetics health platform MVP at{" "}
+										{/* and building a data-driven genetics health platform MVP at{" "}
 										<a href="https://www.perimeter.health/" target="_blank">
 											<span className="text-emerald-400 font-semibold">
 												Perimeter Health
 											</span>
 											.{" "}
-										</a>
-										{/* Former Physician Assistant with 3+ years of frontline
-										emergency medicine experience at a Level 1 trauma center. */}
+										</a> */}
 										As a former emergency medicine Physician Assistant, I bring
 										a calm-under-pressure mindset and user-centered approach to
 										software development.
@@ -69,7 +68,7 @@ const AboutSection = () => {
 									<p className="text-gray-300 leading-relaxed text-lg">
 										My ability to translate real-world complexity into clear,
 										user-friendly digital experiences helps teams build
-										practical, impactful software—whether for clinicians,
+										practical, impactful software - whether for clinicians,
 										customers, or end users in any industry.
 									</p>
 								</div>

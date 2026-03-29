@@ -5,28 +5,28 @@ import farAway from "../assets/images/far-away-tiny.png";
 import hangMon from "../assets/images/hang-mon-start.png";
 // import stickyNotes from "../assets/images/tiny-sticky.png";
 import planets from "../assets/images/planets-tiny.png";
-import perimeterHealth from "../assets/images/perimeter-health-tiny.png";
+// import perimeterHealth from "../assets/images/perimeter-health-tiny.png";
 
 const ProjectsSection = () => {
 	const projects = [
-		{
-			id: 5,
-			title: "Perimeter Health Company Site",
-			description:
-				"A modern, responsive company website for an early-stage startup, built with Webflow. The site features Calendly widget integration for demo booking, onboarding forms, and showcases the company's mission and services.",
-			skills: [
-				"Webflow",
-				"Responsive Design",
-				"Template Customization",
-				"SEO",
-				"CMS",
-			],
-			tools: ["Webflow", "CMS"],
-			link: "https://www.perimeter.health/",
-			gradient: "from-green-500 to-teal-500",
-			image: perimeterHealth,
-			gitHubRepo: "",
-		},
+		// {
+		// 	id: 5,
+		// 	title: "Perimeter Health Company Site",
+		// 	description:
+		// 		"A modern, responsive company website for an early-stage startup, built with Webflow. The site features Calendly widget integration for demo booking, onboarding forms, and showcases the company's mission and services.",
+		// 	skills: [
+		// 		"Webflow",
+		// 		"Responsive Design",
+		// 		"Template Customization",
+		// 		"SEO",
+		// 		"CMS",
+		// 	],
+		// 	tools: ["Webflow", "CMS"],
+		// 	link: "https://www.perimeter.health/",
+		// 	gradient: "from-green-500 to-teal-500",
+		// 	image: perimeterHealth,
+		// 	gitHubRepo: "",
+		// },
 		{
 			id: 2,
 			title: "Hang 'Mon",
@@ -44,7 +44,8 @@ const ProjectsSection = () => {
 			link: "https://hang-mon.vercel.app/",
 			gradient: "from-purple-500 to-pink-500",
 			image: hangMon,
-			gitHubRepo: "https://github.com/carolb92/hang-mon",
+			gitHubRepo:
+				"https://github.com/carolb92/hang-mon?tab=readme-ov-file#readme",
 		},
 		{
 			id: 4,
