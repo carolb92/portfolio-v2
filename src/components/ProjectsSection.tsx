@@ -6,6 +6,7 @@ import hangMon from "../assets/images/hang-mon-start.png";
 // import stickyNotes from "../assets/images/tiny-sticky.png";
 import planets from "../assets/images/planets-tiny.png";
 // import perimeterHealth from "../assets/images/perimeter-health-tiny.png";
+import spooky from "../assets/images/tiny-spooky.png";
 
 const ProjectsSection = () => {
 	const projects = [
@@ -27,6 +28,28 @@ const ProjectsSection = () => {
 		// 	image: perimeterHealth,
 		// 	gitHubRepo: "",
 		// },
+		{
+			id: 6,
+			title: "Spooky Book Club FL",
+			description:
+				'A web app for tracking the past and current reads and TBR list of a horror book club. Members can add books to the TBR queue, vote on what to read next, rate finished books, and let the "chaos algorithm" decide when picking the next book.',
+			skills: [
+				"Supabase (auth + database)",
+				"Google Books API",
+				"React",
+				"custom hooks",
+				"React Context API",
+				"async state management",
+				"TypeScript",
+				"Shadcn + Tailwind CSS",
+			],
+			tools: ["Vite", "Vercel", "ESLint"],
+			link: "https://spookybookclubfl.vercel.app/",
+			gradient: "from-purple-500 to-pink-500",
+			image: spooky,
+			gitHubRepo:
+				"https://github.com/carolb92/spookybookclubfl?tab=readme-ov-file#readme",
+		},
 		{
 			id: 2,
 			title: "Hang 'Mon",
