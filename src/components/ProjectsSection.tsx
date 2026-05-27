@@ -32,7 +32,7 @@ const ProjectsSection = () => {
 			id: 6,
 			title: "Spooky Book Club FL",
 			description:
-				'A full-stack community platform for tracking the past and current reads and TBR list of a horror book club. (It has actual active users, which I\'m unreasonably proud of.) Members can add books to the TBR queue, vote on what to read next, rate finished books, and let the "chaos algorithm" decide when picking the next book.',
+				'A full-stack community platform for a horror book club. Members can add books to the TBR queue, vote on what to read next, rate finished books, and let the "chaos algorithm" decide when picking the next book.', //It has actual active users, which I\'m unreasonably proud of.
 			skills: [
 				"Supabase (auth + database)",
 				"Google Books API",
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
 			id: 4,
 			title: "Planets Fact Site",
 			description:
-				"A mobile-first planet encyclopedia built with Next.js and TypeScript. Mostly a deep dive into Next.js routing and responsive layout — it's pretty, it works on every screen size, and now I know more about Neptune than I ever expected to.",
+				"A mobile-first planet encyclopedia built with Next.js and TypeScript. Mostly a deep dive into Next.js routing and responsive layout. It's pretty, it works on every screen size, and now I know more about Neptune than I ever expected to.",
 			skills: [
 				"React",
 				"Next.js",
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
 			id: 3,
 			title: "Far Away",
 			description:
-				"A packing list app that persists between sessions via local storage. Sort by name, input order, or packed status. Built with React and TypeScript — simple problem, but getting the state management and sort logic clean was the actual exercise.",
+				"A packing list app that persists between sessions via local storage. Sort by name, input order, or packed status. Built with React and TypeScript. Simple problem, but getting the state management and sort logic clean was the actual exercise.",
 			skills: [
 				"React",
 				"TypeScript",
@@ -171,12 +171,13 @@ const ProjectsSection = () => {
 									className="w-full h-48 object-cover rounded-lg mb-6 group-hover:scale-105 transition-transform duration-300"
 								/>
 
-								<div className="flex flex-col flex-grow">
+								<div className="flex flex-col flex-grow justify-evenly">
 									<h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">
 										{project.title}
 									</h3>
 
-									<p className="text-gray-300 mb-4 leading-relaxed flex-grow">
+									<p className="text-gray-300 mb-4 leading-relaxed">
+										{/* flex-grow */}
 										{project.description}
 									</p>
 
