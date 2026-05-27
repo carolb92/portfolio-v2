@@ -49,6 +49,7 @@ const ProjectsSection = () => {
 			image: spooky,
 			gitHubRepo:
 				"https://github.com/carolb92/spookybookclubfl?tab=readme-ov-file#readme",
+			videoDemo: "https://www.loom.com/share/146932929e1d4fed817678115b378634",
 		},
 		{
 			id: 2,
@@ -252,6 +253,31 @@ const ProjectsSection = () => {
 													/>
 												</svg>
 											</Button>
+										)}
+										{project.videoDemo && (
+											<>
+												<Button
+													onClick={(e) => {
+														e.stopPropagation();
+														handleProjectClick(project.videoDemo!);
+													}}
+													variant="outline"
+													className="w-full bg-emerald-500/[0.07] border border-emerald-500/25 text-emerald-300/75 hover:scale-105 hover:bg-emerald-500/15 hover:border-emerald-400/50 hover:text-emerald-200 hover:shadow-[0_0_16px_rgba(16,185,129,0.2)] transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
+												>
+													Watch Demo
+													<svg
+														className="w-4 h-4 ml-2"
+														fill="currentColor"
+														viewBox="0 0 24 24"
+													>
+														<path d="M8 5v14l11-7z" />
+													</svg>
+												</Button>
+												<p className="text-xs text-gray-500 text-center -mt-1">
+													some features require sign-in — this walkthrough shows
+													them all
+												</p>
+											</>
 										)}
 									</div>
 								</div>
