@@ -32,7 +32,7 @@ const ProjectsSection = () => {
 			id: 6,
 			title: "Spooky Book Club FL",
 			description:
-				'A web app for tracking the past and current reads and TBR list of a horror book club. Members can add books to the TBR queue, vote on what to read next, rate finished books, and let the "chaos algorithm" decide when picking the next book.',
+				'A full-stack community platform for tracking the past and current reads and TBR list of a horror book club. (It has actual active users, which I\'m unreasonably proud of.) Members can add books to the TBR queue, vote on what to read next, rate finished books, and let the "chaos algorithm" decide when picking the next book.',
 			skills: [
 				"Supabase (auth + database)",
 				"Google Books API",
@@ -55,7 +55,7 @@ const ProjectsSection = () => {
 			id: 2,
 			title: "Hang 'Mon",
 			description:
-				"A Pokemon guessing game built with React, TypeScript, and Tailwind CSS. Select Region and Type filters and guess the randomly generated Pokemon before your seven attempts run out, otherwise you'll make Pikachu super sad.",
+				"A Pokémon hangman game with Region and Type filters. Built with React, TypeScript, and the PokéAPI — URL state keeps your filter selections intact if you share a link or refresh mid-game. Guess the randomly generated Pokemon before your seven attempts run out; don't let Pikachu down.",
 			skills: [
 				"React",
 				"TypeScript",
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
 			id: 4,
 			title: "Planets Fact Site",
 			description:
-				"This is a mobile-first, multi-page planets facts site built with React, Next.js, TypeScript, and Tailwind CSS. It features a responsive design that adapts to different screen sizes, ensuring a seamless user experience on both mobile and desktop devices. The site includes a dynamic navigation menu that highlights the current page, enhancing usability and accessibility, as well as tabbed content sections for each planet.",
+				"A mobile-first planet encyclopedia built with Next.js and TypeScript. Mostly a deep dive into Next.js routing and responsive layout — it's pretty, it works on every screen size, and now I know more about Neptune than I ever expected to.",
 			skills: [
 				"React",
 				"Next.js",
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
 			id: 3,
 			title: "Far Away",
 			description:
-				"This is a single-page React application built with TypeScript and Tailwind CSS. It allows users to add items and their quantities to a packing list, then mark them as packed or delete them. Users can also sort the list by name, input order, and packed status. Local storage is used for data persistence, enhancing user experience by retaining packing list state between sessions.",
+				"A packing list app that persists between sessions via local storage. Sort by name, input order, or packed status. Built with React and TypeScript — simple problem, but getting the state management and sort logic clean was the actual exercise.",
 			skills: [
 				"React",
 				"TypeScript",
@@ -141,8 +141,10 @@ const ProjectsSection = () => {
 					</h2>
 					<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
 					<p className="text-gray-300 text-lg max-w-2xl mx-auto">
-						Explore my latest work showcasing modern web development techniques
-						and user-centered design.
+						{/* Explore my latest work showcasing modern web development techniques
+						and user-centered design. */}
+						Small apps that work exactly like they should and look good doing
+						it.
 					</p>
 				</div>
 

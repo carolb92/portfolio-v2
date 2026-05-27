@@ -60,8 +60,10 @@ const HeroSection = () => {
 					{/* Bridging clinical insight with technical expertise to build intuitive,
 					scalable web applications that enhance healthcare workflows and
 					patient care. */}
-					From clinical care to code—building intuitive, scalable web
-					applications that simplify complex workflows and improve outcomes.
+					{/* From clinical care to code—building intuitive, scalable web
+					applications that simplify complex workflows and improve outcomes. */}
+					Former clinician. Current builder of apps that are genuinely pleasant
+					to use.
 				</p>
 
 				<div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
