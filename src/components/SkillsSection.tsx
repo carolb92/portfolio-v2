@@ -8,7 +8,7 @@ const SkillsSection = () => {
 
 	const skillCategories = [
 		{
-			category: "Frontend Technologies",
+			category: "Tech Stack",
 			skills: [
 				"HTML5",
 				"CSS3",
@@ -16,17 +16,18 @@ const SkillsSection = () => {
 				"TypeScript",
 				"React.js",
 				"Next.js",
+				"Supabase (auth + DB)",
 			],
 			color: "emerald",
 		},
 		{
 			category: "Styling & Design",
-			skills: ["Tailwind CSS", "Figma", "Photoshop"],
+			skills: ["Tailwind CSS", "Shadcn", "Figma", "Photoshop"],
 			color: "teal",
 		},
 		{
 			category: "Development Tools",
-			skills: ["Git & GitHub", "Vite", "Vercel", "Modern AI Developer Tools"],
+			skills: ["Git & GitHub", "Vite", "Vercel", "Claude Code"],
 			color: "cyan",
 		},
 	];
@@ -40,8 +41,7 @@ const SkillsSection = () => {
 					</h2>
 					<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
 					<p className="text-gray-300 text-lg max-w-2xl mx-auto">
-						A comprehensive toolkit for building modern, scalable web
-						applications with a focus on user experience and performance.
+						What I use to build what you need.
 					</p>
 				</div>
 
