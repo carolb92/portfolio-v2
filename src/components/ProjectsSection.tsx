@@ -75,7 +75,7 @@ const ProjectsSection = () => {
 			id: 4,
 			title: "Planets Fact Site",
 			description:
-				"A mobile-first planet encyclopedia built with Next.js and TypeScript. Mostly a deep dive into Next.js routing and responsive layout. It's pretty, it works on every screen size, and now I know more about Neptune than I ever expected to.",
+				"A mobile-first planet encyclopedia built with Next.js and TypeScript. Mostly a deep dive into Next.js routing and responsive layout. It's aesthetically pleasing, it looks great on every screen size, and now I know more about Neptune than I ever expected to.",
 			skills: [
 				"React",
 				"Next.js",

@@ -20,8 +20,8 @@ const ContactSection = () => {
 					</h2>
 					<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
 					<p className="text-gray-300 text-lg max-w-2xl mx-auto">
-						Ready to collaborate on your next project? Let's connect and create
-						something amazing together.
+						Open to new projects, interesting problems, and the occasional
+						rabbit hole.
 					</p>
 				</div>
 
@@ -45,11 +45,14 @@ const ContactSection = () => {
 									</svg>
 								</div>
 								<h3 className="text-2xl font-bold text-white mb-2">
-									Let's Talk!
+									Ready When You Are
 								</h3>
 								<p className="text-gray-300">
-									I'm always open to discussing new opportunities and
-									interesting projects.
+									I'm actively looking for new opportunities - frontend-focused,
+									but I don't stop at the component tree when the project calls
+									for more. Have a project in mind and want to work with someone
+									who thinks about the person on the other side of the screen?
+									Let's talk.
 								</p>
 							</div>
 
@@ -81,7 +84,7 @@ const ContactSection = () => {
 										onClick={() =>
 											window.open(
 												"https://www.linkedin.com/in/carolbruggemandeveloper/",
-												"_blank"
+												"_blank",
 											)
 										}
 									>
@@ -107,12 +110,6 @@ const ContactSection = () => {
 						</CardContent>
 					</Card>
 				</div>
-
-				{/* <div className="text-center mt-16">
-					<p className="text-gray-400">
-						Built with ❤️ using React, TypeScript, and Tailwind CSS
-					</p>
-				</div> */}
 			</div>
 		</section>
 	);

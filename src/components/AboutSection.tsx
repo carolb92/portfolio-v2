@@ -16,10 +16,9 @@ const AboutSection = () => {
 				<div className="max-w-4xl mx-auto">
 					<Card className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover">
 						<CardContent className="p-8">
-							<div className="flex items-start space-x-6">
-								<div className="flex-shrink-0">
+							<div className="overflow-hidden">
+								<div className="float-left mr-6 mb-2">
 									<div className="w-24 h-24 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-2xl font-bold text-white pulse-glow">
-										{/* CB */}
 										<img
 											src={headshot}
 											alt="Carol Bruggeman"
@@ -27,51 +26,40 @@ const AboutSection = () => {
 										/>
 									</div>
 								</div>
-								<div className="flex-1">
-									<div className="flex items-center space-x-4 mb-6">
-										<Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
-											Frontend Developer
-										</Badge>
-										{/* <Badge className="bg-teal-500/20 text-teal-400 border-teal-500/30">
-											Healthcare Professional
-										</Badge> */}
-									</div>
 
-									<p className="text-gray-300 leading-relaxed text-lg mb-6">
-										Frontend-focused developer with a background in emergency
-										medicine and a passion for building intuitive, scalable web
-										applications. I bring hands-on experience developing web
-										applications using React.js, Next.js, TypeScript, Tailwind
-										CSS, and Supabase.
-									</p>
-
-									<p className="text-gray-300 leading-relaxed text-lg mb-6">
-										Currently contributing to practice management software for
-										diabetes education services at{" "}
-										<a href="https://www.palisaid.com/" target="_blank">
-											<span className="text-emerald-400 font-semibold">
-												Palisaid.
-											</span>{" "}
-										</a>
-										{/* and building a data-driven genetics health platform MVP at{" "}
-										<a href="https://www.perimeter.health/" target="_blank">
-											<span className="text-emerald-400 font-semibold">
-												Perimeter Health
-											</span>
-											.{" "}
-										</a> */}
-										As a former emergency medicine Physician Assistant, I bring
-										a calm-under-pressure mindset and user-centered approach to
-										software development.
-									</p>
-
-									<p className="text-gray-300 leading-relaxed text-lg">
-										My ability to translate real-world complexity into clear,
-										user-friendly digital experiences helps teams build
-										practical, impactful software - whether for clinicians,
-										customers, or end users in any industry.
-									</p>
+								<div className="flex items-center space-x-4 mb-6">
+									<Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
+										Frontend Developer
+									</Badge>
 								</div>
+
+								<p className="text-gray-300 leading-relaxed text-lg mb-6">
+									I'm a frontend-focused developer with a background in
+									emergency medicine, which mostly means I'm calm when things
+									break and I think about the end user before I think about the
+									code.
+								</p>
+
+								<p className="text-gray-300 leading-relaxed text-lg mb-6">
+									Currently contributing to practice management software for
+									diabetes education practices at{" "}
+									<a href="https://www.palisaid.com/" target="_blank">
+										<span className="text-emerald-400 font-semibold">
+											Palisaid.
+										</span>{" "}
+									</a>
+									My stack is React.js, Next.js, TypeScript, Tailwind CSS, and
+									Supabase.
+								</p>
+
+								<p className="text-gray-300 leading-relaxed text-lg">
+									I care about interfaces that don't complicate things with
+									unnecessary complexity. That instinct came from clinical work,
+									where a confusing UI isn't just annoying, it's a problem. My
+									goal as a developer stems from that: empower the user with a
+									frictionless interface they actually enjoy using. Everything
+									else follows.
+								</p>
 							</div>
 						</CardContent>
 					</Card>
