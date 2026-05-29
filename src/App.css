@@ -46,6 +46,11 @@ h1, h2, h3, h4 {
 .accent-gradient {
 	background: oklch(0.71 0.19 280);
 	color: oklch(0.12 0.018 255);
+	transition: background 0.2s ease, transform 0.3s ease;
+}
+
+.accent-gradient:hover {
+	background: oklch(0.78 0.17 280);
 }
 
 .card-hover {
@@ -75,6 +80,19 @@ h1, h2, h3, h4 {
 	background: oklch(0.71 0.19 280 / 0.2);
 	height: 1px;
 	margin: 6rem 0;
+}
+
+.nav-wordmark {
+	font-family: 'Fraunces', serif;
+	font-size: 17px;
+	font-style: italic;
+	color: oklch(0.71 0.19 280);
+	letter-spacing: 0.03em;
+	transition: color 0.25s ease;
+}
+
+.nav-wordmark:hover {
+	color: oklch(0.82 0.17 280);
 }
 
 .nav-blur {

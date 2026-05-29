@@ -21,10 +21,10 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 			<div className="container mx-auto px-6 py-4">
 				<div className="flex items-center justify-between">
 					<div
-						className="text-2xl font-bold text-gradient cursor-pointer"
+						className="nav-wordmark cursor-pointer select-none"
 						onClick={() => scrollToSection("hero")}
 					>
-						CB
+						carol.
 					</div>
 					<div className="hidden md:flex space-x-8">
 						{navItems.map((item) => (
@@ -41,10 +41,7 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 						))}
 					</div>
 					<div className="md:hidden">
-						<Button
-							variant="ghost"
-							className="text-white hover:text-accent"
-						>
+						<Button variant="ghost" className="text-white hover:text-accent">
 							<svg
 								className="w-6 h-6"
 								fill="none"
