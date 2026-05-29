@@ -26,7 +26,7 @@ const ContactSection = () => {
 				</div>
 
 				<div className="max-w-2xl mx-auto">
-					<Card className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover">
+					<Card className="bg-card border-border backdrop-blur-sm card-hover">
 						<CardContent className="p-8">
 							<div className="text-center mb-8">
 								<div className="w-20 h-20 bg-accent/10 border border-accent/20 rounded-full flex items-center justify-center text-accent mx-auto mb-4">

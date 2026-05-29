@@ -30,7 +30,7 @@ const HeroSection = () => {
 	return (
 		<section
 			id="hero"
-			className="min-h-screen flex items-center justify-center hero-gradient"
+			className="min-h-screen flex items-center justify-center"
 		>
 			<div className="container mx-auto px-6 text-center">
 				{/* <div className="floating-animation">
@@ -91,6 +91,7 @@ const HeroSection = () => {
 					<a
 						href="https://www.linkedin.com/in/carolbruggemandeveloper/"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<Button
 							variant="outline"
@@ -119,7 +120,7 @@ const HeroSection = () => {
 					<div className="inline-flex items-center space-x-2 text-gray-400">
 						<span>Scroll to explore</span>
 						<svg
-							className="w-4 h-4 animate-bounce"
+							className="w-4 h-4 motion-safe:animate-bounce"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"

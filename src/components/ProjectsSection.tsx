@@ -153,7 +153,7 @@ const ProjectsSection = () => {
 					{projects.map((project) => (
 						<Card
 							key={project.id}
-							className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover cursor-pointer group flex flex-col h-full lg:w-[80%] lg:justify-self-center lg:gap-1 xl:w-[65%]"
+							className="bg-card border-border backdrop-blur-sm card-hover cursor-pointer group flex flex-col h-full lg:w-[80%] lg:justify-self-center lg:gap-1 xl:w-[65%]"
 							onClick={() => handleProjectClick(project.link)}
 						>
 							<CardContent className="p-6 flex flex-col h-full">

@@ -13,12 +13,17 @@ body {
 	color: oklch(0.94 0.006 255);
 	overflow-x: hidden;
 	font-family: 'Figtree', sans-serif;
-	animation: hueShift 30s ease-in-out infinite;
 }
 
 h1, h2, h3, h4 {
 	font-family: 'Fraunces', serif;
 	font-optical-sizing: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	body {
+		animation: hueShift 30s ease-in-out infinite;
+	}
 }
 
 @keyframes hueShift {
@@ -27,15 +32,11 @@ h1, h2, h3, h4 {
 	66%       { --bg-hue: 282; }
 }
 
-.hero-gradient {
-	background: transparent;
-}
-
 .text-gradient {
 	background: linear-gradient(
 		135deg,
 		oklch(0.78 0.17 272) 0%,
-		oklch(0.71 0.19 280) 50%,
+		var(--accent) 50%,
 		oklch(0.66 0.20 290) 100%
 	);
 	-webkit-background-clip: text;
@@ -44,9 +45,9 @@ h1, h2, h3, h4 {
 }
 
 .accent-gradient {
-	background: oklch(0.71 0.19 280);
+	background: var(--accent);
 	color: oklch(0.12 0.018 255);
-	transition: background 0.2s ease, transform 0.3s ease;
+	transition: background 0.2s ease;
 }
 
 .accent-gradient:hover {
@@ -60,24 +61,24 @@ h1, h2, h3, h4 {
 
 .card-hover:hover {
 	transform: translateY(-6px);
-	box-shadow: 0 20px 40px -12px oklch(0.71 0.19 280 / 0.15);
+	box-shadow: 0 20px 40px -12px oklch(from var(--accent) l c h / 0.15);
 }
 
 .skill-tag {
-	background: oklch(0.71 0.19 280 / 0.08);
-	border: 1px solid oklch(0.71 0.19 280 / 0.25);
+	background: oklch(from var(--accent) l c h / 0.08);
+	border: 1px solid oklch(from var(--accent) l c h / 0.25);
 	color: oklch(0.78 0.17 278);
 	transition: all 0.2s ease;
 }
 
 .skill-tag:hover {
-	background: oklch(0.71 0.19 280 / 0.14);
-	border-color: oklch(0.71 0.19 280 / 0.4);
+	background: oklch(from var(--accent) l c h / 0.14);
+	border-color: oklch(from var(--accent) l c h / 0.4);
 	transform: translateY(-2px);
 }
 
 .section-divider {
-	background: oklch(0.71 0.19 280 / 0.2);
+	background: oklch(from var(--accent) l c h / 0.2);
 	height: 1px;
 	margin: 6rem 0;
 }
@@ -86,7 +87,7 @@ h1, h2, h3, h4 {
 	font-family: 'Fraunces', serif;
 	font-size: 17px;
 	font-style: italic;
-	color: oklch(0.71 0.19 280);
+	color: var(--accent);
 	letter-spacing: 0.03em;
 	transition: color 0.25s ease;
 }
@@ -98,11 +99,11 @@ h1, h2, h3, h4 {
 .nav-blur {
 	backdrop-filter: blur(20px);
 	background: oklch(0.13 0.018 255 / 0.88);
-	border-bottom: 1px solid oklch(0.71 0.19 280 / 0.15);
+	border-bottom: 1px solid oklch(from var(--accent) l c h / 0.15);
 }
 
 .parallax-bg {
 	background-image:
-		radial-gradient(circle at 15% 25%, oklch(0.71 0.19 280 / 0.04) 0%, transparent 55%),
-		radial-gradient(circle at 85% 75%, oklch(0.71 0.19 280 / 0.03) 0%, transparent 55%);
+		radial-gradient(circle at 15% 25%, oklch(from var(--accent) l c h / 0.04) 0%, transparent 55%),
+		radial-gradient(circle at 85% 75%, oklch(from var(--accent) l c h / 0.03) 0%, transparent 55%);
 }

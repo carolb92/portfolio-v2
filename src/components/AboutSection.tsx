@@ -14,7 +14,7 @@ const AboutSection = () => {
 				</div>
 
 				<div className="max-w-4xl mx-auto">
-					<Card className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover">
+					<Card className="bg-card border-border backdrop-blur-sm card-hover">
 						<CardContent className="p-8">
 							<div className="overflow-hidden">
 								<div className="float-left mr-6 mb-2">
@@ -43,7 +43,7 @@ const AboutSection = () => {
 								<p className="text-gray-300 leading-relaxed text-lg mb-6">
 									Currently contributing to practice management software for
 									diabetes education programs at{" "}
-									<a href="https://www.palisaid.com/" target="_blank">
+									<a href="https://www.palisaid.com/" target="_blank" rel="noopener noreferrer">
 										<span className="text-accent font-semibold">
 											Palisaid.
 										</span>{" "}
