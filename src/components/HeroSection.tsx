@@ -30,7 +30,7 @@ const HeroSection = () => {
 	return (
 		<section
 			id="hero"
-			className="min-h-screen flex items-center justify-center hero-gradient"
+			className="min-h-screen flex items-center justify-center"
 		>
 			<div className="container mx-auto px-6 text-center">
 				{/* <div className="floating-animation">
@@ -46,7 +46,7 @@ const HeroSection = () => {
 					<span className="text-gradient">Carol Bruggeman</span>
 					<br />
 					<span
-						className={`text-white transition-opacity duration-[2000ms] text-glow ${
+						className={`text-white transition-opacity duration-[2000ms] ${
 							isVisible ? "opacity-100" : "opacity-0"
 						}`}
 						aria-hidden="true"
@@ -70,7 +70,7 @@ const HeroSection = () => {
 					<Button
 						onClick={scrollToProjects}
 						size="lg"
-						className="accent-gradient hover:scale-105 transition-transform duration-300 px-8 py-4 text-lg font-semibold pulse-glow"
+						className="accent-gradient hover:scale-105 transition-transform duration-300 px-8 py-4 text-lg font-semibold"
 					>
 						View My Work
 						<svg
@@ -91,11 +91,12 @@ const HeroSection = () => {
 					<a
 						href="https://www.linkedin.com/in/carolbruggemandeveloper/"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<Button
 							variant="outline"
 							size="lg"
-							className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300 px-8 py-4 text-lg"
+							className="border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 px-8 py-4 text-lg"
 							// onClick={() =>
 							// 	window.open(
 							// 		"https://www.linkedin.com/in/carolbruggemandeveloper/",
@@ -119,7 +120,7 @@ const HeroSection = () => {
 					<div className="inline-flex items-center space-x-2 text-gray-400">
 						<span>Scroll to explore</span>
 						<svg
-							className="w-4 h-4 animate-bounce"
+							className="w-4 h-4 motion-safe:animate-bounce"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"

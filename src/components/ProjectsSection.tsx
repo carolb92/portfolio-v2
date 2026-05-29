@@ -139,7 +139,7 @@ const ProjectsSection = () => {
 					<h2 className="text-4xl md:text-5xl font-bold mb-6">
 						Featured <span className="text-gradient">Projects</span>
 					</h2>
-					<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
+					<div className="w-24 h-px bg-accent/40 mx-auto mb-8"></div>
 					<p className="text-gray-300 text-lg max-w-2xl mx-auto">
 						{/* Explore my latest work showcasing modern web development techniques
 						and user-centered design. */}
@@ -153,7 +153,7 @@ const ProjectsSection = () => {
 					{projects.map((project) => (
 						<Card
 							key={project.id}
-							className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover cursor-pointer group flex flex-col h-full lg:w-[80%] lg:justify-self-center lg:gap-1 xl:w-[65%]"
+							className="bg-card border-border backdrop-blur-sm card-hover cursor-pointer group flex flex-col h-full lg:w-[80%] lg:justify-self-center lg:gap-1 xl:w-[65%]"
 							onClick={() => handleProjectClick(project.link)}
 						>
 							<CardContent className="p-6 flex flex-col h-full">
@@ -172,7 +172,7 @@ const ProjectsSection = () => {
 								/>
 
 								<div className="flex flex-col flex-grow justify-evenly">
-									<h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">
+									<h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
 										{project.title}
 									</h3>
 
@@ -182,7 +182,7 @@ const ProjectsSection = () => {
 									</p>
 
 									<div className="mb-10">
-										<p className="text-sm text-emerald-400 font-semibold mb-2">
+										<p className="text-sm text-accent font-semibold mb-2">
 											Skills:
 										</p>
 										<div className="flex flex-wrap gap-2">
@@ -239,7 +239,7 @@ const ProjectsSection = () => {
 													handleProjectClick(project.gitHubRepo);
 												}}
 												variant="outline"
-												className="w-full border-emerald-500 text-emerald-400 hover:scale-105 hover:bg-emerald-500 hover:text-white transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
+												className="w-full border-accent text-accent hover:scale-105 hover:bg-accent/10 hover:border-accent hover:text-white transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
 											>
 												View GitHub Repo
 												<svg
@@ -265,7 +265,7 @@ const ProjectsSection = () => {
 														handleProjectClick(project.videoDemo!);
 													}}
 													variant="outline"
-													className="w-full bg-emerald-500/[0.07] border border-emerald-500/25 text-emerald-300/75 hover:scale-105 hover:bg-emerald-500/15 hover:border-emerald-400/50 hover:text-emerald-200 hover:shadow-[0_0_16px_rgba(16,185,129,0.2)] transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
+													className="w-full bg-accent/[0.07] border border-accent/20 text-accent/70 hover:scale-105 hover:bg-accent/15 hover:border-accent/40 hover:text-accent transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
 												>
 													Watch Demo
 													<svg
