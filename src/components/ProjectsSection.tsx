@@ -239,7 +239,7 @@ const ProjectsSection = () => {
 													handleProjectClick(project.gitHubRepo);
 												}}
 												variant="outline"
-												className="w-full border-accent text-accent hover:scale-105 hover:bg-accent hover:text-white transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
+												className="w-full border-accent text-accent hover:scale-105 hover:bg-accent/10 hover:border-accent hover:text-white transition-all duration-300 group-hover:shadow-lg mt-auto font-semibold"
 											>
 												View GitHub Repo
 												<svg
