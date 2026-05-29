@@ -10,7 +10,7 @@ const AboutSection = () => {
 					<h2 className="text-4xl md:text-5xl font-bold mb-6">
 						About <span className="text-gradient">Me</span>
 					</h2>
-					<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
+					<div className="w-24 h-px bg-accent/40 mx-auto mb-8"></div>
 				</div>
 
 				<div className="max-w-4xl mx-auto">
@@ -18,7 +18,7 @@ const AboutSection = () => {
 						<CardContent className="p-8">
 							<div className="overflow-hidden">
 								<div className="float-left mr-6 mb-2">
-									<div className="w-24 h-24 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-2xl font-bold text-white pulse-glow">
+									<div className="w-24 h-24 rounded-full overflow-hidden">
 										<img
 											src={headshot}
 											alt="Carol Bruggeman"
@@ -28,7 +28,7 @@ const AboutSection = () => {
 								</div>
 
 								<div className="flex items-center space-x-4 mb-6">
-									<Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
+									<Badge className="bg-accent/10 text-accent border-accent/20">
 										Frontend Developer
 									</Badge>
 								</div>
@@ -42,9 +42,9 @@ const AboutSection = () => {
 
 								<p className="text-gray-300 leading-relaxed text-lg mb-6">
 									Currently contributing to practice management software for
-									diabetes education practices at{" "}
+									diabetes education programs at{" "}
 									<a href="https://www.palisaid.com/" target="_blank">
-										<span className="text-emerald-400 font-semibold">
+										<span className="text-accent font-semibold">
 											Palisaid.
 										</span>{" "}
 									</a>

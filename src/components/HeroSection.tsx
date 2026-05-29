@@ -46,7 +46,7 @@ const HeroSection = () => {
 					<span className="text-gradient">Carol Bruggeman</span>
 					<br />
 					<span
-						className={`text-white transition-opacity duration-[2000ms] text-glow ${
+						className={`text-white transition-opacity duration-[2000ms] ${
 							isVisible ? "opacity-100" : "opacity-0"
 						}`}
 						aria-hidden="true"
@@ -70,7 +70,7 @@ const HeroSection = () => {
 					<Button
 						onClick={scrollToProjects}
 						size="lg"
-						className="accent-gradient hover:scale-105 transition-transform duration-300 px-8 py-4 text-lg font-semibold pulse-glow"
+						className="accent-gradient hover:scale-105 transition-transform duration-300 px-8 py-4 text-lg font-semibold"
 					>
 						View My Work
 						<svg
@@ -95,7 +95,7 @@ const HeroSection = () => {
 						<Button
 							variant="outline"
 							size="lg"
-							className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300 px-8 py-4 text-lg"
+							className="border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 px-8 py-4 text-lg"
 							// onClick={() =>
 							// 	window.open(
 							// 		"https://www.linkedin.com/in/carolbruggemandeveloper/",

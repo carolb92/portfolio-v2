@@ -32,8 +32,8 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 								key={item.id}
 								variant="ghost"
 								onClick={() => scrollToSection(item.id)}
-								className={`text-white hover:text-emerald-400 transition-colors duration-300 ${
-									activeSection === item.id ? "text-emerald-400" : ""
+								className={`text-white hover:text-accent transition-colors duration-300 ${
+									activeSection === item.id ? "text-accent" : ""
 								}`}
 							>
 								{item.label}
@@ -43,7 +43,7 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 					<div className="md:hidden">
 						<Button
 							variant="ghost"
-							className="text-white hover:text-emerald-400"
+							className="text-white hover:text-accent"
 						>
 							<svg
 								className="w-6 h-6"

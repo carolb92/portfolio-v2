@@ -18,17 +18,14 @@ const SkillsSection = () => {
 				"Next.js",
 				"Supabase (auth + DB)",
 			],
-			color: "emerald",
 		},
 		{
 			category: "Styling & Design",
 			skills: ["Tailwind CSS", "Shadcn", "Figma", "Photoshop"],
-			color: "teal",
 		},
 		{
 			category: "Development Tools",
 			skills: ["Git & GitHub", "Vite", "Vercel", "Claude Code"],
-			color: "cyan",
 		},
 	];
 
@@ -39,7 +36,7 @@ const SkillsSection = () => {
 					<h2 className="text-4xl md:text-5xl font-bold mb-6">
 						Skills & <span className="text-gradient">Technologies</span>
 					</h2>
-					<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
+					<div className="w-24 h-px bg-accent/40 mx-auto mb-8"></div>
 					<p className="text-gray-300 text-lg max-w-2xl mx-auto">
 						What I use to build what you need.
 					</p>
@@ -48,16 +45,14 @@ const SkillsSection = () => {
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 					{skillCategories.map((category, categoryIndex) => (
 						<div key={categoryIndex} className="text-center">
-							<h3
-								className={`text-xl font-bold mb-6 text-${category.color}-400`}
-							>
+							<h3 className="text-xl font-bold mb-6 text-accent">
 								{category.category}
 							</h3>
 							<div className="flex flex-wrap gap-3 justify-center">
 								{category.skills.map((skill, skillIndex) => (
 									<Badge
 										key={skillIndex}
-										className={`skill-tag text-sm py-2 px-4 bg-${category.color}-500/20 text-${category.color}-400 border-${category.color}-500/30`}
+										className="skill-tag text-sm py-2 px-4"
 									>
 										{skill}
 									</Badge>

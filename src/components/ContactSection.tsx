@@ -18,7 +18,7 @@ const ContactSection = () => {
 					<h2 className="text-4xl md:text-5xl font-bold mb-6">
 						Get In <span className="text-gradient">Touch</span>
 					</h2>
-					<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
+					<div className="w-24 h-px bg-accent/40 mx-auto mb-8"></div>
 					<p className="text-gray-300 text-lg max-w-2xl mx-auto">
 						Open to new projects, interesting problems, and the occasional
 						rabbit hole.
@@ -29,7 +29,7 @@ const ContactSection = () => {
 					<Card className="bg-gray-900/50 border-gray-800 backdrop-blur-sm card-hover">
 						<CardContent className="p-8">
 							<div className="text-center mb-8">
-								<div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4 pulse-glow">
+								<div className="w-20 h-20 bg-accent/10 border border-accent/20 rounded-full flex items-center justify-center text-accent mx-auto mb-4">
 									<svg
 										className="w-8 h-8"
 										fill="none"
@@ -80,7 +80,7 @@ const ContactSection = () => {
 
 									<Button
 										variant="outline"
-										className="flex-1 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white transition-all duration-300 px-6 py-3"
+										className="flex-1 border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 px-6 py-3"
 										onClick={() =>
 											window.open(
 												"https://www.linkedin.com/in/carolbruggemandeveloper/",
@@ -101,7 +101,7 @@ const ContactSection = () => {
 
 								<div className="text-center pt-4">
 									<p className="text-gray-400">
-										<span className="text-emerald-400">
+										<span className="text-accent">
 											carol.bruggeman92@gmail.com
 										</span>
 									</p>
