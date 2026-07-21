@@ -1,12 +1,13 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import farAway from "../assets/images/far-away-tiny.png";
+// import farAway from "../assets/images/far-away-tiny.png";
 import hangMon from "../assets/images/hang-mon-start.png";
 // import stickyNotes from "../assets/images/tiny-sticky.png";
 import planets from "../assets/images/planets-tiny.png";
 // import perimeterHealth from "../assets/images/perimeter-health-tiny.png";
 import spooky from "../assets/images/tiny-spooky.png";
+import healthTrends from "../assets/images/myhealth-trends.png";
 
 const ProjectsSection = () => {
 	const projects = [
@@ -52,6 +53,28 @@ const ProjectsSection = () => {
 			videoDemo: "https://www.loom.com/share/146932929e1d4fed817678115b378634",
 		},
 		{
+			id: 3,
+			title: "MyHealthTrends",
+			description:
+				"This is a demo of a SMART on FHIR patient portal app using synthetic patient data, launched through a public SMART sandbox. Scope is limited to 3 chronic diseases: hypertension, diabetes, and hyperlipidemia. The app displays condition-specific lab trends and clinical metrics in a tabbed dashboard, allowing the patient to easily visualize their health data.",
+			skills: [
+				"SMART on FHIR OAuth2",
+				"FHIR data modeling & transformation",
+				"data visualization",
+				"ShadCN + Tailwind CSS",
+				"custom hooks",
+				"React",
+				"React Router",
+				"TypeScript",
+			],
+			tools: ["Vite", "Vercel", "Chrome DevTools"],
+			link: "https://chronic-disease-tracker.vercel.app/",
+			gradient: "from-blue-500 to-cyan-500",
+			image: healthTrends,
+			gitHubRepo:
+				"https://github.com/carolb92/chronic-disease-tracker?tab=readme-ov-file",
+		},
+		{
 			id: 2,
 			title: "Hang 'Mon",
 			description:
@@ -90,24 +113,25 @@ const ProjectsSection = () => {
 			image: planets,
 			gitHubRepo: "https://github.com/carolb92/planets-fact-site",
 		},
-		{
-			id: 3,
-			title: "Far Away",
-			description:
-				"A packing list app that persists between sessions via local storage. Sort by name, input order, or packed status. Built with React and TypeScript. Simple problem, but getting the state management and sort logic clean was the actual exercise.",
-			skills: [
-				"React",
-				"TypeScript",
-				"Tailwind CSS",
-				"local storage",
-				"sorting",
-			],
-			tools: ["Vite", "Vercel", "Chrome DevTools"],
-			link: "https://far-away-v2.vercel.app/",
-			gradient: "from-blue-500 to-cyan-500",
-			image: farAway,
-			gitHubRepo: "https://github.com/carolb92/far-away-v2",
-		},
+
+		// {
+		// 	id: 3,
+		// 	title: "Far Away",
+		// 	description:
+		// 		"A packing list app that persists between sessions via local storage. Sort by name, input order, or packed status. Built with React and TypeScript. Simple problem, but getting the state management and sort logic clean was the actual exercise.",
+		// 	skills: [
+		// 		"React",
+		// 		"TypeScript",
+		// 		"Tailwind CSS",
+		// 		"local storage",
+		// 		"sorting",
+		// 	],
+		// 	tools: ["Vite", "Vercel", "Chrome DevTools"],
+		// 	link: "https://far-away-v2.vercel.app/",
+		// 	gradient: "from-blue-500 to-cyan-500",
+		// 	image: farAway,
+		// 	gitHubRepo: "https://github.com/carolb92/far-away-v2",
+		// },
 		// {
 		// 	id: 1,
 		// 	title: "Super Sticky Notes",
