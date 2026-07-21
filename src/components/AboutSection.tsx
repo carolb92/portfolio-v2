@@ -41,9 +41,13 @@ const AboutSection = () => {
 								</p>
 
 								<p className="text-gray-300 leading-relaxed text-lg mb-6">
-									Currently contributing to practice management software for
-									diabetes education programs at{" "}
-									<a href="https://www.palisaid.com/" target="_blank" rel="noopener noreferrer">
+									Currently contributing to a dashboards/reports app for
+									self-insured employers and employee benefits consultants at{" "}
+									<a
+										href="https://www.palisaid.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<span className="text-accent font-semibold">
 											Palisaid.
 										</span>{" "}

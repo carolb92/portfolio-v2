@@ -45,7 +45,7 @@ const ContactSection = () => {
 									</svg>
 								</div>
 								<h3 className="text-2xl font-bold text-white mb-2">
-									Ready When You Are
+									Let's Connect
 								</h3>
 								<p className="text-gray-300">
 									I'm actively looking for new opportunities - frontend-focused,
