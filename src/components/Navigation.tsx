@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Button } from "./ui/button";
+import { Drawer } from "./ui/drawer";
 
 const Navigation = ({ activeSection }: { activeSection: string }) => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 	const navItems = [
 		{ id: "hero", label: "Home" },
 		{ id: "projects", label: "Projects" },
@@ -14,6 +18,7 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
 		}
+		setIsMenuOpen(false);
 	};
 
 	return (
@@ -32,7 +37,7 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 								key={item.id}
 								variant="ghost"
 								onClick={() => scrollToSection(item.id)}
-								className={`text-white hover:text-accent transition-colors duration-300 ${
+								className={`text-white transition-colors duration-300 ${
 									activeSection === item.id ? "text-accent" : ""
 								}`}
 							>
@@ -41,7 +46,13 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 						))}
 					</div>
 					<div className="md:hidden">
-						<Button variant="ghost" className="text-white hover:text-accent">
+						<Button
+							variant="ghost"
+							className="text-white hover:text-accent"
+							aria-label="Toggle menu"
+							aria-expanded={isMenuOpen}
+							onClick={() => setIsMenuOpen(true)}
+						>
 							<svg
 								className="w-6 h-6"
 								fill="none"
@@ -59,6 +70,23 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
 					</div>
 				</div>
 			</div>
+
+			<Drawer open={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+				<div className="flex flex-col p-6 gap-2">
+					{navItems.map((item) => (
+						<Button
+							key={item.id}
+							variant="ghost"
+							onClick={() => scrollToSection(item.id)}
+							className={`justify-start text-white transition-colors duration-300 ${
+								activeSection === item.id ? "text-accent" : ""
+							}`}
+						>
+							{item.label}
+						</Button>
+					))}
+				</div>
+			</Drawer>
 		</nav>
 	);
 };
